@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Docs</title>
+  </head>
+  <body>
+    <h1>Media docs</h1>
+
+    <div>
+      <audio controls>
+        <!--loop muted autoplay -->
+        <source src="../../medis/audio/music.mp3" type="" />
+      </audio>
+    </div>
+
+    <div>
+      <video controls>
+        <source src="../../medis/videos/video.mkv" type="" />
+      </video>
+    </div>
+
+    <!-- Iframe for Youtube -->
+    <div>
+      <iframe
+        src="https://www.youtube.com/embed/qF20cAHKrXA"
+        width="500"
+        height="400"
+      ></iframe>
+    </div>
+
+    <!-- Iframe with google map -->
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe
+          width="1014"
+          height="585"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=GFVC%2BCHQ%2C%20Minna%20920102%2C%20Niger&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe
+        ><a href="http://vin-odometer.info">vin-odometer.info</a><br /><style>
+          .mapouter {
+            position: relative;
+            text-align: right;
+            height: 585px;
+            width: 1014px;
+          }</style
+        ><a href="https://embedmaps.info">Embed Google Maps</a
+        ><style>
+          .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 585px;
+            width: 1014px;
+          }
+        </style>
+      </div>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Docs</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+
+    <form id="contact-form" action="#" method="GET">
+      <!-- Text input -->
+      <div class="">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="e.g. Amaka Obi"
+        />
+      </div>
+
+      <div class="">
+        <!-- Email input -->
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="you@example.com"
+        />
+      </div>
+
+      <div class="">
+        <label for="password">Password:</label>
+        <!-- Password -->
+        <input type="password" id="password" name="password" />
+      </div>
+
+      <div class="">
+        <label for="age">Age:</label>
+        <!-- Number -->
+        <input type="number" id="age" name="age" min="16" max="99" />
+      </div>
+
+      <div class="">
+        <!-- Checkbox -->
+        <input type="checkbox" id="terms" name="terms" />
+        <label for="terms">I agree to the terms</label>
+      </div>
+
+      <div class="">
+        <!-- Radio buttons -->
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="others" name="gender" value="others" />
+        <label for="other">others</label>
+        <!-- <input type="radio" id="A" name="grade" value="A" />
+        <label for="A">A</label> -->
+      </div>
+
+      <div class="">
+        <!-- Dropdown -->
+        <label for="service">Service Needed</label>
+        <select id="service" name="service">
+          <option value="">— Choose a service —</option>
+          <option value="web_s">Website Design</option>
+          <option value="web_app">Web Application</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="">
+        <!-- Textarea (multi-line text) -->
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <div class="">
+        <!-- Submit button -->
+        <input type="submit" value="Send Message" />
+        <!-- <button type="submit">Send Message</button> -->
+      </div>
+    </form>
+
+    <form action="" method="get">
+      <fieldset>
+        <legend>Personal Infomation</legend>
+
+        <input type="text" name="firstName" id="firstName" />
+        <input type="text" name="lastName" id="lastName" />
+      </fieldset>
+    </form>
+  </body>
+</html>
