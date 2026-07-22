@@ -1,29 +1,27 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* body{
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #f4f4f4;
-} */
 nav {
+  background-color: #220554;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
-  background-color: purple;
   color: white;
 }
-nav a{
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  padding: 10px;
-  color: white;
-}
-ul li {
+ul > li {
   list-style: none;
   display: inline-block;
+  /* gap: 10px; */
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 5px;
+  /* border: 0.5px solid white; */
 }
