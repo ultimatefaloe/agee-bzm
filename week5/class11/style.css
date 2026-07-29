@@ -20,14 +20,22 @@
   background-color: grey;
   border-radius: 100%;
   border: 1px solid blue;
+  animation: bounce 1s infinite;
 }
 
 .bg_1 {
   background: linear-gradient(to bottom right, blue, red);
+  animation: bounceUp 1s infinite;
 }
 
 .bg_2 {
   background-color: blue;
+  animation: bouncedown 1s infinite;
+}
+
+.bg_3 {
+  background-color: rgb(0, 255, 30);
+  animation: bounceSide 1s infinite;
 }
 
 .a {
@@ -42,4 +50,54 @@
 .c {
   grid-column: 1/2;
   grid-row: 1/2;
+}
+
+@keyframes identifier {
+  from { 
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(10px);
+  }
+}
+
+@keyframes bounceUp {
+  0%,
+  100% {
+    transform: translateY(0);
+    /* transform: translateX(0); */
+  }
+  50% {
+    transform: translateY(10px);
+    /* transform: translateX(10px); */
+  }
+}
+@keyframes bouncedown {
+  0%,
+  100% {
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(-10px);
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes bounceSide {
+  0% {
+    transform: translateX(10px);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
 }
