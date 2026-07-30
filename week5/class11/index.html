@@ -5,16 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Inventory Dashboard</title>
     <link rel="stylesheet" href="dash.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .heading {
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid red;
+        margin: 10px 0;
+      }
+    </style>
   </head>
   <body>
     <section>
-      <aside>
+      <aside id="nav">
         <a href="index.html">Dashboard</a>
         <a href="product.html">Product</a>
         <a href="">POS</a>
       </aside>
       <main>
+        <h1 class="heading">Welcome to our page</h1>
+
+        <button onclick="alert('Hello, you trigger an alert')">
+          Click for alert
+        </button>
+
         <div class="grid">
           <div class="box a bg_1"></div>
           <div class="box b bg_2"></div>
@@ -26,7 +40,27 @@
           <div class="box h bg_3"></div>
           <div class="box h bg_2"></div>
         </div>
+
+        <img src="" alt="" />
+
+        <section>
+          <div class="blog">
+            <h2 class="blog-title">My blog title</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+              iure eius maiores magni fuga sequi placeat cumque aut, quidem
+              sapiente tempora hic nesciunt ab obcaecati quo ex doloribus
+              cupiditate voluptatum?
+            </p>
+          </div>
+        </section>
       </main>
     </section>
+
+    <script>
+      alert("This will be trigger on page reload or page load")
+      console.log("Hello, World!")
+    </script>
+    <script type="module" src="../class13/script.js"></script>
   </body>
 </html>
