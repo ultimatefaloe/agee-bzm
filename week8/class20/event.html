@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Event</title>
+    <style>
+      form{
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+        border: 1px solid gray;
+      }
+      form div {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      label{
+        padding: 10px 5px;
+        font-weight: 500;
+      }
+      input{
+        outline: none;
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding: 10px 5px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>LOGO</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>HOME</li>
+          <li>BLOG</li>
+          <li>PROJECT</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <button id="btn">click me</button>
+
+
+        <p id="mouse-track"></p>
+
+      <form id="contact-form">
+        <!-- Text input -->
+        <div class="">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value=""
+            placeholder="e.g. Amaka Obi"
+          />
+        </div>
+
+        <div class="">
+          <!-- Email input -->
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+          />
+        </div>
+
+        <div class="">
+          <!-- Textarea (multi-line text) -->
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+
+        <div class="">
+          <!-- Submit button -->
+          <input type="submit" value="Send Message" />
+          <!-- <button type="submit">Send Message</button> -->
+        </div>
+      </form>
+
+    </main>
+
+    <script type="module" src="./event.js"></script>
+  </body>
+</html>
