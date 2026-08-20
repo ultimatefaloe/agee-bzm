@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Post</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header with create button -->
+    <header>
+      <h1>📬 Web Post</h1>
+      <button class="create-btn" id="openModalBtn">+ New Post</button>
+    </header>
+
+    <!-- main post grid -->
+    <main id="postContainer">
+      <!-- posts will be inserted here by javascript -->
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="post-id">User 3 · #42</span>
+        </div>
+        <h2 class="post-title">The Art of Simplicity in UI Design</h2>
+        <p class="post-body">
+          Great design is invisible. When interfaces are intuitive, users focus
+          on their goals, not the tools. This post card exemplifies that
+          principle — clean typography, gentle spacing, and a subtle hierarchy
+          that guides the eye without distraction.
+        </p>
+        <div class="post-footer">
+          <span>📅 2 min read</span>
+        </div>
+      </article>
+      <div class="empty-message">
+        ✨ No posts yet. Click “New Post” to create one.
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <span>📋 simple post manager · click + to add</span>
+    </footer>
+
+    <!-- modal overlay -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <h2>✏️ Create post</h2>
+        <form id="postForm">
+          <label for="titleInput">Title</label>
+          <input
+            type="text"
+            id="titleInput"
+            placeholder="Post title"
+            required
+          />
+
+          <label for="bodyInput">Body</label>
+          <textarea
+            id="bodyInput"
+            placeholder="Write something..."
+            required
+          ></textarea>
+
+          <div class="modal-actions">
+            <button type="button" class="btn-cancel" id="cancelModalBtn">
+              Cancel
+            </button>
+            <button type="submit" class="btn-submit">Publish</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
